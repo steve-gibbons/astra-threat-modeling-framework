@@ -25,7 +25,7 @@
   - **Administrative** — Minor clean-up or enhancement (non-blocking).
 
 - **What Happens if Unresolved**:  
-  - Critical Action Items escalate into Critical Risk Findings in the final report.
+  Critical Action Items escalate into Critical Risk Findings in the final report.
 
 - **Purpose**:  
   Ensure complete and accurate threat modeling and architecture assessment.
@@ -37,13 +37,17 @@
 | Category | Purpose |
 |:--|:--|
 | **Risk Findings** | Address real-world vulnerabilities and weaknesses directly. |
-| **Critical Action Items** | Address missing pieces needed to complete evaluation accurately. |
+| **Critical Action Items** | Address missing information needed to complete evaluation accurately. |
 
 ---
 
 ## Visual Flow
-Discovery →
-↳ Finding Risk Directly → Risk Finding
-↳ Missing Information → Critical Action Item
-↳ If Resolved → Normal reporting
-↳ If Not Resolved → Escalates into Critical Risk
+
+**Discovery Phase:**
+
+- Finding risk directly → Becomes a **Risk Finding**
+- Finding missing information → Becomes a **Critical Action Item**
+  - If resolved → Normal reporting
+  - If unresolved → Escalates into a **Critical Risk Finding**
+
+---
