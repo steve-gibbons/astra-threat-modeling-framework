@@ -159,7 +159,7 @@ Risk Prioritized
 - You are free to **share, adapt, and remix** the ASTRA materials with proper attribution.
 - Attribution Requirement:
 
-> "ASTRA Threat Modeling and Security Architecture Review Framework, developed by [Your Name or Organization]."
+> "ASTRA Threat Modeling and Security Architecture Review Framework, developed by Steve Gibbons."
 
 ---
 
