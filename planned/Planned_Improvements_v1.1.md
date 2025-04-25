@@ -57,6 +57,7 @@ The enhancements below are planned to be manageable, high-impact, and community-
 - Optional deeper scoring model (Likelihood x Impact weightings).
 - Common Controls Mapping Appendices (e.g., align findings to NIST CSF, ISO 27001).
 - Expanded language translations (longer-term global expansion).
+- Create an "Optional Expanded Questionnaire Pack" (v1.2 or later): Introduce a separate set of deeper business context and technical architecture questionnaires for highly regulated or complex systems, while keeping ASTRA’s core questionnaires lightweight and approachable.
 
 ---
 
