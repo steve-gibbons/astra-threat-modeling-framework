@@ -1,6 +1,22 @@
 # ASTRA Threat Modeling and Security Architecture Review Framework
 
-# ASTRA Practitioner’s Manual (Version 1.0)
+# ASTRA Practitioner’s Manual (Version 1.1)
+
+---
+
+## Personal Note and Dedication
+
+ASTRA is dedicated to **Karen**, my fiancée, who continues to inspire me to seek the light, to fight the Dark Side, and to believe that clarity, collaboration, and resilience are forces for good — in both life and work.
+
+This project is my way of giving back to the professional community I've been privileged to be part of — offering not just a tool, but the benefit of lessons learned over decades of real-world experience.
+
+It is also a personal statement: in a time of economic uncertainty, layoffs, and shifting priorities, I choose to build. I choose to share. I choose to lead with integrity and clarity.
+
+ASTRA is meant for practitioners who believe that security and governance are not mere compliance checklists — they are missions. They are responsibilities.
+
+Thank you for taking the time to explore ASTRA. May you find it useful, practical, and — most importantly — a tool for doing good.
+
+— **Steve Gibbons**
 
 ---
 
@@ -14,7 +30,6 @@ ASTRA is designed to:
 - Identify risks, prioritize mitigations, and strengthen security postures.
 - Deliver professional, actionable recommendations — **not audits**.
 
----
 
 ## Philosophy and Background
 
