@@ -1,24 +1,40 @@
-# ASTRA Technical Architecture Questionnaire
+# Technical Architecture Questionnaire (ASTRA v1.1)
+
+**Purpose:**  
+To capture the technical design, integration points, data handling, and resilience of the system.
+
+---
 
 ## System Overview
-- Please provide architectural diagrams.
-- What are the key system components (databases, APIs, services, frontends)?
+- Please describe the primary components and technologies used.
+- Is the system primarily on-premises, cloud-based, hybrid, or distributed?
 
-## Authentication and Authorization
-- How is authentication handled (SSO, OAuth, custom)?
-- How is authorization managed (RBAC, ABAC, custom roles)?
+## Data and Privacy
+- What types of sensitive data are collected, processed, or stored? *(e.g., PII, PHI, PCI, IP, Proprietary Business Data)*
+- How is sensitive data protected at rest and in transit?
 
-## Data Flow and Storage
-- How is data transmitted and stored (encryption at rest, in transit)?
-- Are third parties involved in data handling?
+## Access and Authentication
+- What authentication methods are used (MFA, SSO, OAuth, etc.)?
+- How is authorization enforced across the system?
 
-## Change Management and Deployment
-- How are updates deployed (CI/CD pipeline, manual)?
-- Are there rollback or contingency plans?
+## External Dependencies
+- List critical external services and providers (e.g., AWS, Azure, SaaS platforms, third-party APIs).
+- How are external service risks monitored or mitigated?
 
-## Security and Monitoring
-- What security monitoring or alerting is in place?
-- How are security incidents detected and handled?
+## Emerging Technologies
+- Does the system incorporate AI/ML models, LLMs, autonomous agents, blockchain, or IoT components?
+- If AI/ML is used, how are models validated, secured, and monitored for misuse or drift?
 
-## Third-Party Dependencies
-- What external services, SDKs, or APIs are relied upon?
+## Monitoring and Incident Response
+- Is this system integrated with organizational monitoring (SIEM, EDR, logging infrastructure)?
+- What incident detection, response, and recovery capabilities exist for this system?
+
+## Architecture and Threat Surface
+- Are up-to-date architecture diagrams available (including trust boundaries and data flows)?
+- What are the major entry points and external interfaces?
+- Have any significant recent changes been made to the system architecture?
+
+---
+
+# End of Technical Architecture Questionnaire (ASTRA v1.1)
+
