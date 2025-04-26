@@ -1,18 +1,21 @@
-# ASTRA Business Context Questionnaire
+# Business Context Questionnaire (ASTRA v1.1)
 
-## Business Use Understanding
-- What primary business problems does this system/product solve?
-- Who are the intended users (internal, external, partners)?
-- Are there regulatory or compliance obligations tied to this system?
+**Purpose:** To understand the system's business purpose, criticality, risk appetite, and regulatory environment.
 
-## Operational Scope
-- Geographic regions served?
-- Planned system expansions or retirements?
+### Business Overview
+- What primary business goals does this system, service, or product support?
+- Who are the key stakeholders and business owners for this system?
+- How is success measured for this system (e.g., availability, revenue, user satisfaction)?
 
-## Business Priorities
-- Which operational outcomes are mission-critical?
-- What types of business damage would be most severe (financial, legal, reputational)?
+### Criticality and Impact
+- What would be the business consequences of failure or compromise of this system? *(Financial, Operational, Reputational, Legal)*
+- Which business processes depend on this system for core operations?
+- Are there specific business continuity, recovery, or redundancy requirements tied to this system?
 
-## Privacy and Compliance
-- What types of personal data (if any) are processed?
-- What industry-specific regulations apply (HIPAA, PCI, GDPR, etc.)?
+### Regulatory and Legal Environment
+- What regulations, contractual obligations, or industry standards apply to this system? *(e.g., GDPR, HIPAA, PCI DSS, SOX)*
+- Are there any specific data residency or sovereignty requirements?
+
+### Risk Tolerance
+- How would you describe the organization's general risk appetite for this system? *(Conservative, Moderate, Aggressive)*
+- Are there risk thresholds or criteria that must be met for system approval or continued operation?
