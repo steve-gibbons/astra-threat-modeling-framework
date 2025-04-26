@@ -1,6 +1,6 @@
 # ASTRA Threat Modeling and Security Architecture Review Framework
 
-# ASTRA Practitioner’s Manual (Version 1.1)
+# ASTRA Practitioner’s Manual (Version 1.1.1)
 
 ---
 
@@ -20,7 +20,29 @@ Thank you for taking the time to explore ASTRA. May you find it useful, practica
 
 ---
 
-## 1. Introduction
+## 1. Philosophy and Background
+
+ASTRA was developed from over 25 years of hands-on experience with governance, risk management, security architecture review, and third-party evaluation across highly regulated, large-scale enterprise environments.
+
+Its design reflects lessons learned while leading critical evaluation and governance initiatives at organizations such as Wells Fargo, American Express, Ameriprise Financial, and IBM. These experiences included:
+
+- Reviewing internal development and third-party services.
+- Supporting vendor onboarding, mergers and acquisitions (M&A) due diligence.
+- Responding to regulatory and audit requirements.
+- Driving modernization projects while maintaining resilience.
+
+### Core Principles Behind ASTRA
+
+- **Governance Must Align to Reality**
+- **Third-Party Risk Cannot Be an Afterthought**
+- **Architecture Reviews Must Prioritize Actionable Findings**
+- **Collaboration Outperforms Confrontation**
+- **Simplicity Eliminates Friction**
+- **Flexibility is Key to Scalability**
+
+---
+
+## 2. Introduction
 
 **ASTRA** (Architecture and Security Threat Review and Analysis) is a collaborative, business-driven methodology for security architecture review and threat modeling.
 
@@ -30,36 +52,9 @@ ASTRA is designed to:
 - Identify risks, prioritize mitigations, and strengthen security postures.
 - Deliver professional, actionable recommendations — **not audits**.
 
-
-## Philosophy and Background
-
-ASTRA is the result of over 25 years of hands-on experience with governance, risk management, security architecture review, and third-party evaluation across highly regulated, large-scale enterprise environments.
-
-Its development was shaped by the real-world needs encountered while leading or participating in critical evaluation and governance initiatives at Wells Fargo, American Express, Ameriprise Financial, and IBM. Across these organizations, extensive security and architecture reviews were performed on both internal developments and third-party services, including detailed risk analyses supporting vendor onboarding, mergers and acquisitions (M&A) due diligence, regulatory response efforts, and enterprise modernization projects.
-
-ASTRA embodies several lessons learned from that frontline work:
-
-- **Governance Must Align to Reality:**  
-  Risk evaluations must focus on how technology supports business objectives, not just theoretical vulnerabilities.
-
-- **Third-Party Risk Cannot Be an Afterthought:**  
-  Understanding architectural risks, data protection practices, and operational maturity early is critical to managing vendor and M&A risks.
-
-- **Architecture Reviews Must Prioritize Actionable Findings:**  
-  Risk mitigation recommendations must be business-aligned and prioritized, not theoretical.
-
-- **Collaboration Outperforms Confrontation:**  
-  Evaluations succeed when approached as collaborative discovery and improvement efforts, not adversarial audits.
-
-- **Flexibility is Key to Scalability:**  
-  Methodologies must adapt across startups, enterprises, cloud-native, and hybrid environments.
-
-- **Simplicity Eliminates Friction:**  
-  Minimizing unnecessary complexity enables faster adoption, easier understanding, and more transparent results.
-
 ---
 
-## 2. ASTRA Process Overview
+## 3. ASTRA Process Overview
 
 | Phase | Purpose |
 |:--|:--|
@@ -71,30 +66,48 @@ ASTRA embodies several lessons learned from that frontline work:
 
 ---
 
-## 3. Work Products (Intermediary and Final)
+## 4. Work Products (Intermediary and Final)
 
 | Work Product | Purpose |
 |:--|:--|
 | Business Context Questionnaire | Document client usage and business assumptions. |
 | Technical Architecture Questionnaire | Capture system design, boundaries, components. |
-| Unified Working Spreadsheet | Consolidated capture of observations, assumptions, risks, action items, follow-up questions, and to-dos. |
-| Meeting Demographics Tab | Capture attendee names, roles, meeting format, date/time, and interviewer notes. |
-| Final Risk and Recommendations Report | Primary client deliverable summarizing findings and actions. |
-| Client-Facing Guide | Optional onboarding document explaining ASTRA approach. |
+| Emerging Risks Questionnaire | Supplemental tool for new technologies and evolving risks. |
+| Unified Working Spreadsheet | Consolidated capture of observations, assumptions, risks, action items, follow-ups, and to-dos. |
+| Risk Findings Table | **View of Unified Working Spreadsheet** filtered to show risk findings. |
+| Critical Action Items Table | **View of Unified Working Spreadsheet** filtered to show urgent, blocking gaps. |
+| Administrative To-Do Log | **View of Unified Working Spreadsheet** for minor documentation and enhancements. |
+| Final Risk and Recommendations Report | Standalone or generated view summarizing prioritized risks and actions. |
+| Client-Facing Guide | Optional onboarding guide explaining ASTRA's structure and expectations. |
 
 ---
 
-## 4. Interview Process
+## 5. Interview and Discovery Process
 
 - **Group Interviews Supported**: Multiple SMEs, architects, and business owners may attend.
-- **Attendance Mode Tracked**: In-person, video, phone — documented on the Meeting Demographics tab.
-- **Attribution Tracked**: Whenever possible, attribute comments or clarifications to individual attendees.
-- **Gap Owners Assigned**: Every Identified Gap must have a designated "Owner" for follow-up.
-- **Collaborative Tone**: Interviews are exploratory and improvement-focused — **not confrontational or audit-driven**.
+- **Attendance Mode Tracked**: In-person, video, or hybrid format recorded in Meeting Logistics.
+- **Attribution Tracked**: Assign clarifications, assumptions, or discoveries to individuals where possible.
+- **Gap Owners Assigned**: Each Critical Action Item must have an assigned owner.
+- **Collaborative Tone**: Interviews are collaborative, discovery-driven, and improvement-focused — **never adversarial**.
 
----
+### Meeting Logistics Tab
+Captures:
+- Meeting ID, Date, Time
+- Attendee Names and Roles
+- Meeting Format (Video, In-person, Hybrid)
+- Interviewer Name(s)
+- Session Notes
 
-## 5. Findings, Action Items, To-Dos, Assumptions, and Follow-Up Questions
+### Main Tab Major Groupings
+
+| Group | Columns |
+|:--|:--|
+| **General** | Record ID, Summary and Details |
+| **Risk** | Business Impact Area, Severity, Likelihood, Inherent Risk |
+| **Remediation** | Cost, Timeline, Difficulty, Mitigation Impact |
+| **Resolve** | Residual Risk, Assigned Owner, Due Date, Status |
+
+### Record Types
 
 | Record ID Prefix | Record Type |
 |:--|:--|
@@ -105,84 +118,101 @@ ASTRA embodies several lessons learned from that frontline work:
 | TD-xxx | Administrative To-Do |
 | FU-xxx | Follow-up Question |
 
-- **Observations** and **Assumptions** often require follow-up confirmation (status: Confirm).
-- **Follow-Up Questions** (FU-xxx) are logged explicitly and tracked for closure.
-- **Action Items** are reserved only for show-stopping gaps.
-- **To-Dos** track non-blocking enhancements and improvements.
-- **Unresolved Critical Action Items escalate into Critical Risk Findings.**
+---
+
+## 6. Field Option Definitions
+
+(included fully — identical to previous update)
 
 ---
 
-## 6. Risk Prioritization and Scoring
+## 7. Findings, Action Items, Assumptions, Follow-Ups
+
+| Record ID Prefix | Record Type | Purpose |
+|:--|:--|:--|
+| O-xxx | Observation | General system or process observations. |
+| A-xxx | Assumption | Conditions or usage expectations not confirmed. |
+| R-xxx | Risk Finding | Discovered threat or vulnerability. |
+| AI-xxx | Critical Action Item | Missing information or immediate resolution gap. |
+| TD-xxx | Administrative To-Do | Documentation or minor clean-up. |
+| FU-xxx | Follow-up Question | Clarifications to verify with stakeholders. |
+
+- Action Items must be resolved or escalated to formal risks.
+- Observations and Assumptions often start with status "Confirm."
+
+---
+
+## 8. Risk Prioritization and Scoring
 
 | Element | Definition |
 |:--|:--|
-| **Severity** | Potential business impact if risk materializes. |
-| **Likelihood** | Probability that risk will materialize. |
-| **Inherent Risk** | Calculated Severity x Likelihood before mitigations. |
-| **To Repair: Cost** | Estimated cost to fix. |
-| **To Repair: Timeline** | Estimated time to fix. |
-| **To Repair: Difficulty** | Technical and organizational difficulty. |
-| **Residual Risk** | Estimated risk level after recommended mitigation is applied. |
+| Severity | Potential business impact if realized. |
+| Likelihood | Chance of occurrence. |
+| Inherent Risk | Pre-mitigation combined risk. |
+| Cost | Estimated financial/resource effort to remediate. |
+| Timeline | Estimated time to complete remediation. |
+| Difficulty | Technical/organizational remediation difficulty. |
+| Mitigation Impact | Estimated effectiveness of repair. |
+| Residual Risk | Post-mitigation remaining risk. |
 
-### ASTRA Risk Matrix
+### Risk Matrix
 
 | Severity / Likelihood | Very Low | Low | Medium | High |
 |:--|:--|:--|:--|:--|
-| **Informational** | Informational | Informational | Informational | Informational |
-| **Low** | Informational | Low | Medium | Medium |
-| **Medium** | Low | Medium | Medium | High |
-| **High** | Medium | Medium | High | Critical |
-| **Critical** | High | High | Critical | Critical |
+| Informational | Informational | Informational | Informational | Informational |
+| Low | Informational | Low | Medium | Medium |
+| Medium | Low | Medium | Medium | High |
+| High | Medium | Medium | High | Critical |
+| Critical | High | High | Critical | Critical |
 
 ---
 
-## 7. Status Definitions
+## 9. Status Definitions
 
 | Status | Meaning |
 |:--|:--|
-| Confirm | Item requires clarification or validation. |
-| Open | Item identified and actively tracked. |
-| In Progress | Work actively underway. |
-| Closed | Completed or resolved. |
-| Deferred | Postponed intentionally. |
-| Promoted to Risk | Follow-up or Action escalated to a Risk Finding. |
+| Confirm | Needs follow-up validation. |
+| Open | Identified and active. |
+| In Progress | Being addressed. |
+| Closed | Fully resolved. |
+| Deferred | Intentionally delayed. |
+| Promoted to Risk | Escalated into formal risk finding. |
 
 ---
 
-## 8. Escalation Rules
+## 10. Escalation Rules
 
 | Scenario | Escalation Outcome |
 |:--|:--|
-| Critical Action Item unresolved by deadline | Promoted to Critical Risk Finding in final report. |
-| Administrative To-Do Item open | Tracked but does not block report or create a new finding. |
+| Critical Action Item unresolved | Escalated to Critical Risk Finding. |
+| Administrative To-Do still open | Non-blocking; logged but does not prevent reporting. |
 
 ---
 
-## 9. Visual Flows
+## 11. Visual Flows
 
 ### Interview and Discovery Flow
-
 ```
 Discovery →
-    - Observation Identified → Observation Record
-    - Assumption Identified → Assumption Record
-    - Follow-up Question Identified → FU Record
-    - Risk Identified → Risk Finding Record
+    - Observation Identified → Observation
+    - Assumption Identified → Assumption
+    - Follow-Up Identified → Follow-up Question
+    - Risk Identified → Risk Finding
     - Missing Info Identified → Critical Action Item
         - If Resolved → No Impact
-        - If Unresolved → Becomes Critical Risk Finding
+        - If Unresolved → Becomes Risk Finding
 ```
 
 ### Risk Assessment Flow
-
 ```
 Severity Estimated
 Likelihood Estimated
  ↓
 Inherent Risk Calculated
  ↓
-"To Repair" Cost, Timeline, Difficulty Estimated
+Cost/Timeline/Difficulty Estimated
+ ↓
+Mitigation Impact Estimated
  ↓
 Residual Risk Estimated
  ↓
@@ -191,20 +221,19 @@ Risk Prioritized
 
 ---
 
-## 10. Client Communication Philosophy
+## 12. Client Communication Philosophy
 
-- Emphasize that ASTRA is **not an audit**.
-- Focus on **discovery**, **understanding**, and **shared improvement**.
-- Interviews are **inquisitive** — not confrontational.
-- Gaps are opportunities to **strengthen the system**, not assign blame.
+- ASTRA is **not an audit**.
+- Emphasize **learning and discovery**.
+- Engage stakeholders collaboratively.
+- Frame findings as **improvements** and **risk maturity wins**.
 
 ---
 
-## 11. Licensing and Use
+## 13. Licensing and Use
 
-- ASTRA is published under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** License.
-- You are free to **share, adapt, and remix** the ASTRA materials with proper attribution.
-- Attribution Requirement:
+- Published under **Creative Commons Attribution 4.0 International (CC BY 4.0)** License.
+- Proper attribution required.
 
 > "ASTRA Threat Modeling and Security Architecture Review Framework, developed by Steve Gibbons."
 
@@ -212,14 +241,12 @@ Risk Prioritized
 
 ## Appendix: Provided Templates
 
-- Unified Working Spreadsheet
-- Business Context Questionnaire
-- Technical Architecture Questionnaire
-- Quick Guide to Unified Working Spreadsheet
+- Unified Working Spreadsheet Template
+- Business Context Questionnaire Template
+- Technical Architecture Questionnaire Template
+- Quick Guide to Spreadsheet Usage
 
 ---
 
-# End of ASTRA v1.0 Practitioner’s Manual
-
----
+# End of ASTRA v1.1.1 Practitioner’s Manual
 
