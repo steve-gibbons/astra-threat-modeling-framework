@@ -2,10 +2,14 @@
 
 ---
 
-## Overview
 
-**ASTRA** (Architecture and Security Threat Review and Analysis)  
-is a collaborative, business-driven methodology for security architecture review and threat modeling.
+## About ASTRA
+
+ASTRA (Architecture and Security Threat Review and Analysis) is a lightweight, collaborative, business-driven security architecture and risk review methodology developed from over 25 years of frontline experience at Wells Fargo, American Express, Ameriprise Financial, and IBM.
+
+Designed to eliminate unnecessary complexity, ASTRA enables meaningful risk discovery through structured but accessible processes. Most small to medium implementations can be interviewed within 2 to 4 hours, often yielding immediate preliminary insights, without requiring specialized training for participants.
+
+ASTRA emphasizes business alignment, simplicity of execution, operational transparency, and the flexibility to scale assessments from small startups to large enterprise platforms. It prioritizes actionability, collaboration, and improvement, not procedural burden or exhaustive theoretical modeling.
 
 ASTRA focuses on uncovering real-world risks through:
 - Business context alignment
