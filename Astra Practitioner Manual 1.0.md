@@ -39,24 +39,8 @@ ASTRA embodies several lessons learned from that frontline work:
 - **Flexibility is Key to Scalability:**  
   Methodologies must adapt across startups, enterprises, cloud-native, and hybrid environments.
 
----
-
-### Simplicity and Elimination of Unnecessary Complexity
-
-A defining principle of ASTRA is the elimination of unnecessary complexity. Core processes and templates are designed for ease of understanding, rapid adoption, and operational clarity. Participants can easily grasp ASTRA's structure during the evaluation process itself, without needing specialized training.
-
-At the same time, ASTRA's modular design offers powerful flexibility to expand assessments based on scope, formality, or organizational needs. Templates emphasize logical flow over exhaustive cataloging. The focus remains on discovery, collaboration, and improvement rather than procedural burden.
-
----
-
-### Lightweight Interview Process
-
-Most small to medium-scale implementations can be evaluated through structured interviews in approximately **2 to 4 hours** — not including preparatory work, follow-up questions, or final report generation.
-
-In many cases, a **preliminary gut-check evaluation** — a high-level risk and architectural health snapshot — can be provided immediately at the conclusion of the interview session.
-
-The lightweight nature of ASTRA interviews is intentional, designed to minimize operational disruption while maximizing collaborative discovery.
-
+- **Simplicity Eliminates Friction:**  
+  Minimizing unnecessary complexity enables faster adoption, easier understanding, and more transparent results.
 
 ---
 
@@ -78,11 +62,8 @@ The lightweight nature of ASTRA interviews is intentional, designed to minimize 
 |:--|:--|
 | Business Context Questionnaire | Document client usage and business assumptions. |
 | Technical Architecture Questionnaire | Capture system design, boundaries, components. |
-| Artifact Inventory | Track gathered diagrams, documents, policies. |
-| Interview Notes | Capture structured findings, gaps, owner attributions. |
-| Risk Findings Table | Formal risk register with full scoring. |
-| Critical Action Items Table | Track urgent missing information required to complete analysis. |
-| Administrative To-Do Log | Capture non-blocking enhancements and documentation improvements. |
+| Unified Working Spreadsheet | Consolidated capture of observations, assumptions, risks, action items, follow-up questions, and to-dos. |
+| Meeting Demographics Tab | Capture attendee names, roles, meeting format, date/time, and interviewer notes. |
 | Final Risk and Recommendations Report | Primary client deliverable summarizing findings and actions. |
 | Client-Facing Guide | Optional onboarding document explaining ASTRA approach. |
 
@@ -91,22 +72,29 @@ The lightweight nature of ASTRA interviews is intentional, designed to minimize 
 ## 4. Interview Process
 
 - **Group Interviews Supported**: Multiple SMEs, architects, and business owners may attend.
-- **Attendance Mode Tracked**: In-person, video, phone — track per attendee.
+- **Attendance Mode Tracked**: In-person, video, phone — documented on the Meeting Demographics tab.
 - **Attribution Tracked**: Whenever possible, attribute comments or clarifications to individual attendees.
 - **Gap Owners Assigned**: Every Identified Gap must have a designated "Owner" for follow-up.
 - **Collaborative Tone**: Interviews are exploratory and improvement-focused — **not confrontational or audit-driven**.
 
 ---
 
-## 5. Findings vs. Action Items
+## 5. Findings, Action Items, To-Dos, Assumptions, and Follow-Up Questions
 
-| Category | Purpose |
+| Record ID Prefix | Record Type |
 |:--|:--|
-| **Risk Findings** | Risks discovered during review that affect system security, privacy, or resilience. |
-| **Critical Action Items** | Missing information that blocks the ability to accurately complete risk analysis. |
+| O-xxx | Observation |
+| A-xxx | Assumption |
+| R-xxx | Risk Finding |
+| AI-xxx | Critical Action Item |
+| TD-xxx | Administrative To-Do |
+| FU-xxx | Follow-up Question |
 
-- Critical Action Items are either **Critical** (blocking) or **Administrative** (non-blocking).
-- Unresolved Critical Action Items **escalate into Critical Risk Findings** in the final report.
+- **Observations** and **Assumptions** often require follow-up confirmation (status: Confirm).
+- **Follow-Up Questions** (FU-xxx) are logged explicitly and tracked for closure.
+- **Action Items** are reserved only for show-stopping gaps.
+- **To-Dos** track non-blocking enhancements and improvements.
+- **Unresolved Critical Action Items escalate into Critical Risk Findings.**
 
 ---
 
@@ -134,19 +122,16 @@ The lightweight nature of ASTRA interviews is intentional, designed to minimize 
 
 ---
 
-## 7. Action Item Management
+## 7. Status Definitions
 
-- Action Items are reserved only for **show-stopping gaps**.
-- All Critical Action Items must be:
-  - Assigned to an owner
-  - Given a deadline
-  - Tracked until resolved
-
-### Resolution Policy
-- **No final report may be issued while Critical Action Items remain unresolved.**
-- **Missed deadlines promote the item to a Critical Risk Finding.**
-
-Administrative To-Do Items (documentation, minor follow-ups) are tracked separately and do not block report delivery.
+| Status | Meaning |
+|:--|:--|
+| Confirm | Item requires clarification or validation. |
+| Open | Item identified and actively tracked. |
+| In Progress | Work actively underway. |
+| Closed | Completed or resolved. |
+| Deferred | Postponed intentionally. |
+| Promoted to Risk | Follow-up or Action escalated to a Risk Finding. |
 
 ---
 
@@ -165,7 +150,10 @@ Administrative To-Do Items (documentation, minor follow-ups) are tracked separat
 
 ```
 Discovery →
-    - Risk Identified → Risk Finding
+    - Observation Identified → Observation Record
+    - Assumption Identified → Assumption Record
+    - Follow-up Question Identified → FU Record
+    - Risk Identified → Risk Finding Record
     - Missing Info Identified → Critical Action Item
         - If Resolved → No Impact
         - If Unresolved → Becomes Critical Risk Finding
@@ -193,7 +181,7 @@ Risk Prioritized
 - Emphasize that ASTRA is **not an audit**.
 - Focus on **discovery**, **understanding**, and **shared improvement**.
 - Interviews are **inquisitive** — not confrontational.
-- Gaps are opportunities to **strengthen the system**, not blame.
+- Gaps are opportunities to **strengthen the system**, not assign blame.
 
 ---
 
@@ -209,16 +197,14 @@ Risk Prioritized
 
 ## Appendix: Provided Templates
 
-- Interview Notes Template
-- Risk Findings Table Template
-- Critical Action Items Table Template
-- Administrative To-Do Log
-- Risk Matrix Chart
-- Sample Filled Risk Tables
-- Client-Facing Guides
+- Unified Working Spreadsheet
+- Business Context Questionnaire
+- Technical Architecture Questionnaire
+- Quick Guide to Unified Working Spreadsheet
 
 ---
 
-# End of ASTRA v1.0 Practitioner's Manual
+# End of ASTRA v1.0 Practitioner’s Manual
 
 ---
+
