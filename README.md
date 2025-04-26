@@ -2,7 +2,6 @@
 
 ---
 
-
 ## About ASTRA
 
 ASTRA (Architecture and Security Threat Review and Analysis) is a lightweight, collaborative, business-driven security architecture and risk review methodology developed from over 25 years of frontline experience at Wells Fargo, American Express, Ameriprise Financial, and IBM.
@@ -26,7 +25,7 @@ ASTRA is **not an audit** — it is an **inquisitive, improvement-focused exerci
 
 | Folder | Purpose |
 |:--|:--|
-| `/templates/` | Blank operational templates for interviews, findings, and action tracking |
+| `/templates/` | Operational templates including the Unified Working Spreadsheet and pre-interview questionnaires |
 | `/examples/` | Filled sample tables and risk matrix chart |
 | `/client-facing/` | Client onboarding and explanation guides |
 
@@ -34,12 +33,13 @@ ASTRA is **not an audit** — it is an **inquisitive, improvement-focused exerci
 
 ## Key Documents
 
-- Interview Notes Template
-- Risk Findings Table Template
-- Critical Action Items Table Template
+- Unified Working Spreadsheet (with Records and Meeting Demographics tabs)
+- Business Context Questionnaire
+- Technical Architecture Questionnaire
+- Quick Guide to Unified Working Spreadsheet
+- Sample Filled Risk Tables
 - Risk Matrix Chart
-- Side-by-Side Example of Risk Finding vs. Action Item
-- Client Guide: Understanding ASTRA Processes
+- Client-Facing Guide: Understanding ASTRA Processes
 
 ---
 
@@ -55,6 +55,7 @@ See [LICENSE](LICENSE) for more details.
 Contributions are welcome!  
 If you would like to propose additions, templates, or examples, please open an issue or submit a pull request.
 
-Please align with ASTRA's collaborative, improvement-driven philosophy.
+Please assume positive intentions and align with ASTRA's collaborative, improvement-driven philosophy.
 
 ---
+
