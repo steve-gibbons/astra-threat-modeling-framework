@@ -70,6 +70,4 @@ It also serves as a reminder — to myself and to others — that experience mat
 In a challenging job market, ASTRA is also a statement:
 I’m still here. I’m still building. I’m still fighting for what matters.
 
-May the Fourth — and the force of resilience, governance, and clarity — be with you.
-
 — Steve Gibbons
