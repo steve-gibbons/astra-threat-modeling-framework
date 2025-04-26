@@ -59,3 +59,17 @@ Please assume positive intentions and align with ASTRA's collaborative, improvem
 
 ---
 
+## About This Project
+
+ASTRA is dedicated to my fiancée, Karen, who inspires me to fight the Dark Side — in systems, in risk, and in life.
+
+This framework was born from a desire to contribute back to the security and risk management community that has given me so much, to help others build stronger, more resilient systems without unnecessary complexity.
+
+It also serves as a reminder — to myself and to others — that experience matters, that perspective matters, and that with focus and collaboration, we can still create things that are useful, powerful, and good.
+
+In a challenging job market, ASTRA is also a statement:
+I’m still here. I’m still building. I’m still fighting for what matters.
+
+May the Fourth — and the force of resilience, governance, and clarity — be with you.
+
+— Steve Gibbons
