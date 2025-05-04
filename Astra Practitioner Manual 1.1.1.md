@@ -217,6 +217,26 @@ ASTRA focuses on tangible business consequences rather than internal functions. 
 | **Showstopper**   | 5         | Unacceptable and systemic risk. Immediate danger to operations, safety, or compliance.                                                              | Executive intervention required               | Immediate (24–48 hours max)            |
 ---
 
+### Risk Treatment Strategies
+
+ASTRA supports tagging each risk with a high-level treatment strategy to clarify intent and support structured decision-making. Optional subcategories are included parenthetically.
+
+| **Treatment Strategy** | **Description** |
+|------------------------|-----------------|
+| **Avoid**              | Eliminate the source of the risk entirely (e.g., remove the feature, cancel the project). |
+| **Mitigate (Reduce Likelihood)** | Apply controls to lower the chance of occurrence (e.g., hardening, access controls). |
+| **Mitigate (Reduce Impact)**     | Reduce the consequences if the risk occurs (e.g., failover, backups). |
+| **Mitigate (Partial + Accept Residual)** | Address what’s feasible, formally accept the remaining residual risk. |
+| **Accept**             | Acknowledge the risk and take no immediate action (e.g., low-priority, business-justified). |
+| **Transfer (Insurance)** | Use cyber insurance or similar financial instruments to offset potential losses. |
+| **Transfer (Contractual)** | Shift responsibility to another party through SLAs or third-party agreements. |
+| **Monitor Only**       | Track the risk with no current action planned, often due to uncertainty or emerging nature. |
+| **Escalate**           | Forward the risk to governance or leadership for review, funding, or executive decision. |
+| **Defer**              | Temporarily delay treatment, pending redesign or further analysis. |
+| **Retire**             | Risk no longer applies (e.g., system decommissioned or dependency removed). |
+
+> Use the `Risk Treatment Strategy` column in the ASTRA tracker to capture one of the options above. Additional notes can be added in a `Treatment Notes` field if needed.
+
 ## 9. Status Definitions
 
 
