@@ -157,14 +157,25 @@ Captures:
 
 ### Risk Matrix
 
-| Severity / Likelihood | Very Low | Low | Medium | High |
-|:--|:--|:--|:--|:--|
-| Informational | Informational | Informational | Informational | Informational |
-| Low | Informational | Low | Medium | Medium |
-| Medium | Low | Medium | Medium | High |
-| High | Medium | Medium | High | Critical |
-| Critical | High | High | Critical | Critical |
+| **Severity / Likelihood** | **Low**     | **Medium**  | **High**      |
+|---------------------------|-------------|-------------|----------------|
+| **Low**                   | Minimal     | Low         | Medium         |
+| **Medium**                | Low         | Medium      | High           |
+| **High**                  | Medium      | High        | Critical       |
+| **Critical**              | High        | Critical    | Showstopper    |
 
+---
+
+### Risk Rating Levels
+
+| **Category**     | **Level** | **Description**                                                                                                                                       | **Response Guidance**                         | **Default Treatment Timeframe**        |
+|------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------------------------|
+| **Minimal**       | 0         | No meaningful risk or impact. Observations or notes that require no action but are logged for awareness or traceability.                            | Log only; no action required                  | None                                   |
+| **Low**           | 1         | Minimal impact and low likelihood. Minor issues that are unlikely to cause harm. May be addressed during routine reviews.                          | Accept or defer; track optionally             | Next review cycle (e.g., quarterly)    |
+| **Medium**        | 2         | Moderate impact or likelihood. Could cause inefficiencies, non-critical failures, or minor compliance issues.                                       | Mitigate or monitor                           | Within 30–90 days                      |
+| **High**          | 3         | Significant impact or likelihood. May result in data exposure, downtime, or reputational harm.                                                     | Prompt mitigation required                    | Within 30 days                         |
+| **Critical**      | 4         | Severe risk with high likelihood or impact. Could result in legal violations, major outages, or serious financial harm.                            | Immediate remediation or escalation           | Within 7 days                          |
+| **Showstopper**   | 5         | Unacceptable and systemic risk. Immediate danger to operations, safety, or compliance.                                                              | Executive intervention required               | Immediate (24–48 hours max)            |
 ---
 
 ## 9. Status Definitions
