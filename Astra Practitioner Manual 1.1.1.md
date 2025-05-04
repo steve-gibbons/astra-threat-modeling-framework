@@ -148,6 +148,21 @@ ASTRA focuses on tangible business consequences rather than internal functions. 
 > *Security* itself is intentionally **not** a Business Impact Area.  
 > Security is a safeguard mechanism — the BIAs represent the actual consequences when those safeguards fail.
 
+| **ASTRA BIA**                      | **ASTRA Description**                                                                                      | **NIST/FIPS 199**         | **ISO 27005**                    | **FAIR**                          | **HITRUST/HIPAA**                  |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------------|-----------------------------------|------------------------------------|
+| **Customer Safety / Human Harm**  | Risk of physical harm, injury, or adverse health outcomes affecting users, employees, or the public.      | *(Not defined)*            | Personal safety (optional)       | *(Not explicit)*                  | Patient Safety, Device Failure     |
+| **Privacy / PII / PHI**           | Unauthorized access, use, or exposure of personally identifiable or health-related information.            | Confidentiality            | Personal Data Disclosure         | Privacy Violations                | PHI Disclosure                     |
+| **Financial Loss**                | Direct or indirect monetary damage, including theft, fraud, fines, penalties, or lost revenue.             | *(Not explicit)*           | Asset Value, Fraud               | Fines, Response/Replacement Cost  | Financial Penalties, Cost of Breach|
+| **Reputation / Trust**            | Damage to organizational reputation, public perception, or customer confidence.                            | *(Not explicit)*           | Reputational Impact              | Reputation Damage                 | Loss of Public Trust               |
+| **Regulatory / Legal Exposure**   | Legal consequences due to regulatory non-compliance, contract violations, or lawsuits.                     | *(Implied under CIA)*      | Legal Obligations, Compliance    | Fines & Judgments                 | Audit Failure, Civil Penalties     |
+| **Service Continuity / Availability** | Disruption or downtime of services that impact users, customers, or internal operations.              | Availability               | Operational Disruption           | Productivity Loss                 | Downtime, System Unavailability    |
+| **Data Integrity / Quality**      | Compromised accuracy, completeness, or consistency of critical business or operational data.               | Integrity                  | Data Corruption                  | Loss of Integrity                 | Clinical Decision Risk             |
+| **Unauthorized Access / Misuse**  | Improper or excessive access to systems, data, or privileges—whether accidental or malicious.              | Confidentiality            | Misuse or Abuse of Privileges    | Primary Loss Event, Loss Frequency| Improper Access                    |
+| **Internal Misuse / Insider Threat** | Harm caused by employees, contractors, or trusted partners through error or malicious actions.          | *(Not explicit)*           | Insider Misuse                   | Secondary Loss Event              | Workforce Misuse                   |
+| **Supply Chain / Vendor Impact**  | Risk originating from third-party software, platforms, service providers, or suppliers.                    | *(Not explicit)*           | Third-Party Dependency Risk      | External Dependencies             | Third-Party Service Providers      |
+| **Innovation / Product Roadmap**  | Disruption to planned innovation, R&D efforts, or key product and feature rollouts.                        | *(Not defined)*            | Business Strategy Impact         | Competitive Advantage Loss        | R&D Delay, Innovation Risk         |
+| **Strategic or Mission Disruption** | Risk to high-level business strategy, market position, or organizational mission.                        | *(Not defined)*            | Strategic Objectives Impact      | Strategic Risk                    | Business Continuity Disruption     |
+
 ---
 
 ## 7. Findings, Action Items, Assumptions, Follow-Ups
