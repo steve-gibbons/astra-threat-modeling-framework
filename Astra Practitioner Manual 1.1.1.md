@@ -124,6 +124,30 @@ Captures:
 
 (included fully — identical to previous update)
 
+
+### Business Impact Areas (BIAs)
+
+ASTRA focuses on tangible business consequences rather than internal functions. Below is the current taxonomy of supported Business Impact Areas (BIAs). These are used during assessment to describe the **potential organizational harm** if a risk were to materialize.
+
+| **Business Impact Area**          | **Description** |
+|:----------------------------------|:----------------|
+| **Customer Safety / Human Harm**  | Risks that could result in physical injury, harm, or adverse health outcomes to users or the public. |
+| **Privacy / PII / PHI**           | Loss, misuse, or unauthorized access to personal data, including health information or privacy breaches. |
+| **Financial Loss**                | Direct or indirect monetary impact, including fraud, theft, penalties, or loss of revenue. |
+| **Reputation / Trust**            | Harm to brand reputation, public trust, customer loyalty, or media exposure. |
+| **Regulatory / Legal Exposure**   | Violations of laws, contracts, or regulatory frameworks; includes audit failures or lawsuits. |
+| **Service Continuity / Availability** | Downtime, outages, or disruption of core services that affect customers or operations. |
+| **Data Integrity / Quality**      | Loss of data accuracy, corruption, or tampering, undermining business or technical decisions. |
+| **Unauthorized Access / Misuse**  | Breaches of access control, over-permissioning, or misuse of legitimate access. |
+| **Internal Misuse / Insider Threat** | Accidental or malicious misuse of systems by employees, contractors, or partners. |
+| **Supply Chain / Vendor Impact**  | Risks introduced through third-party software, services, or contractual dependencies. |
+| **Innovation / Product Roadmap**  | Delays or derailment of product strategy, feature development, or technology adoption. |
+| **Strategic or Mission Disruption** | Interference with long-term goals, market competitiveness, or organizational priorities. |
+
+> **Note:**  
+> *Security* itself is intentionally **not** a Business Impact Area.  
+> Security is a safeguard mechanism — the BIAs represent the actual consequences when those safeguards fail.
+
 ---
 
 ## 7. Findings, Action Items, Assumptions, Follow-Ups
@@ -180,14 +204,19 @@ Captures:
 
 ## 9. Status Definitions
 
-| Status | Meaning |
-|:--|:--|
-| Confirm | Needs follow-up validation. |
-| Open | Identified and active. |
-| In Progress | Being addressed. |
-| Closed | Fully resolved. |
-| Deferred | Intentionally delayed. |
-| Promoted to Risk | Escalated into formal risk finding. |
+
+Each record in the unified working spreadsheet must include a `Status` to track its current state. The following values are supported across all record types:
+
+| **Status**            | **Meaning** |
+|:----------------------|:------------|
+| **Confirm**           | Item requires clarification, confirmation, or follow-up to determine relevance or accuracy. Common for observations and assumptions. |
+| **Open**              | Actively tracked — relevant and accepted into the working set for further action, review, or resolution. |
+| **In Progress**       | Work is actively underway by the responsible owner or team. |
+| **Closed**            | Fully resolved — no further action required. Applies to all record types. |
+| **Deferred**          | Intentionally postponed. Still relevant, but not being addressed during the current review or cycle. |
+| **Promoted to Risk**  | Used when a follow-up or action item has escalated into a full Risk Finding due to missed deadlines or newly identified impact. Triggers creation of a new `R-xxx` record.
+
+> **Note:** Status values are required for all entries in the unified spreadsheet. Default status for Observations and Assumptions is typically **Confirm**.
 
 ---
 
