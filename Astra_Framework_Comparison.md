@@ -26,6 +26,7 @@ Frameworks compared:
 | **Business Alignment** | Strong — business context is the starting point | Weak — purely technical focus | Strong — privacy is a business driver | Moderate — attacker focus can misalign business context | Strong — mapped to regulatory and business risks |
 | **Output Type** | Consolidated findings, preliminary risk snapshot, actionable plans | Threat models, DFDs with mappings | Privacy-enhanced DFDs | Threat trees, attack libraries, mitigation strategies | Formal risk reports, POA&Ms, ATO packages |
 | **Use Cases** | Security architecture reviews, third-party assessments, vendor evaluations, early discovery | Threat modeling during system/software design | Privacy threat analysis | High-value application security threat simulation | Government and critical infrastructure security governance |
+| **Risk Categorization Model** | RCID (Risk Context & Impact Domains) | None (implicit) | None (privacy-focused) | None (implicit) | Quantitative models (Loss Event Frequency, etc.) |
 
 ---
 
@@ -61,5 +62,8 @@ ASTRA is also complementary to heavier frameworks, providing a discovery layer t
 
 ---
 
+## RCID Update Note (v1.1.1)
+
+ASTRA transitioned from Business Impact Areas (BIAs) to **Risk Context & Impact Domains (RCIDs)** to improve clarity and stakeholder alignment. RCIDs define both the context in which a risk arises and the domain it impacts — creating a more robust and narrative-friendly risk model.
 # End of Document
 
