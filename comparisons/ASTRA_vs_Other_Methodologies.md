@@ -24,7 +24,7 @@ This comparison is provided to help practitioners understand how ASTRA complemen
 | **Complexity Level** | Moderate | Moderate | High | Moderate | High | High |
 | **Flexibility** | High | Medium | Low | Medium | Low | Low |
 | **Primary Outputs** | Risk Findings, Critical Action Items, Business-Aligned Recommendations | Threat categories identified | Attack paths, threat trees | Privacy threat scenarios | Risk profiles | Loss exceedance curves, financial risk metrics |
-| **Risk Prioritization** | Built-in (severity, likelihood, cost, timeline, residual) | Minimal (only implicit) | Emerging during attack simulation | Minimal (privacy focused) | Subjective ranking | Full quantitative scoring |
+| **Risk Prioritization** | Built-in (severity, likelihood, RCID, cost, timeline, residual) | Minimal (only implicit) | Emerging during attack simulation | Minimal (privacy focused) | Subjective ranking | Full quantitative scoring |
 
 ---
 
@@ -34,7 +34,7 @@ This comparison is provided to help practitioners understand how ASTRA complemen
 ASTRA is built around structured interviews and expert discussions rather than rigid checklist completion or attack simulation.
 
 **Business-First Alignment:**  
-Risk identification and prioritization are explicitly tied to business context and organizational impact, not just technical threat likelihood.
+Risk identification and prioritization are explicitly tied to business context and RCID-mapped organizational impact, not just technical threat likelihood.
 
 **Risk Prioritization Built-In:**  
 ASTRA integrates severity, likelihood, repair cost, timeline, difficulty, and residual risk scoring into its standard findings process.
@@ -45,11 +45,14 @@ ASTRA is accessible to small teams as well as large enterprises. It intentionall
 **Realistic, Actionable Results:**  
 Deliverables are intended to directly inform architecture improvements and governance decisions. The goal is meaningful security and resilience improvements, not theoretical threat coverage.
 
+**Comprehensive Impact Taxonomy:**
+ASTRA’s RCID model covers safety, privacy, integrity, availability, financial, and strategic domains in one list.
+
 ---
 
 ## Conclusion
 
-ASTRA complements existing methodologies by offering a practical, business-aligned, and collaboration-driven approach to architecture review and threat modeling.
+ASTRA complements existing methodologies by offering a practical, business-aligned, and collaboration-driven approach to architecture review and threat modeling.  The framework’s RCID taxonomy ensures findings map directly to the business, safety, privacy, and strategic consequences that matter.
 
 Organizations seeking:
 - Pragmatic security insights,
