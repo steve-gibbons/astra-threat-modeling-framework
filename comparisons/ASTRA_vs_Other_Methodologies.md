@@ -52,7 +52,7 @@ ASTRA’s RCID model covers safety, privacy, integrity, availability, financial,
 
 ## Conclusion
 
-ASTRA complements existing methodologies by offering a practical, business-aligned, and collaboration-driven approach to architecture review and threat modeling.  The framework’s RCID taxonomy ensures findings map directly to the business, safety, privacy, and strategic consequences that matter.
+ASTRA complements existing methodologies by offering a practical, business-aligned, and collaboration-driven approach to architecture review and threat modeling.  The framework’s RCID taxonomy ensures findings map directly to the business, safety, privacy, and strategic consequences that matter, using ASTRA’s RCID (Risk Context & Impact Domain) model.
 
 Organizations seeking:
 - Pragmatic security insights,
