@@ -63,3 +63,7 @@ Organizations seeking:
 will find ASTRA an effective methodology, whether used alone or alongside formal models such as STRIDE, OCTAVE, or FAIR.
 
 ---
+
+## RCID Terminology Note (v1.1.1)
+
+As of ASTRA v1.1.1, the term *Business Impact Area (BIA)* has been deprecated. ASTRA now uses **Risk Context & Impact Domains (RCIDs)** to clarify both the stakeholder environment (context) and the type of consequence (impact). This dual-axis categorization improves clarity across all assessment outputs.
