@@ -7,6 +7,10 @@
 - **What They Are**:  
   Documented risks identified through system analysis, interviews, or observation.
 
+- **Record Prefix**: `R-xxx`
+
+- **RCID Required**: Each Risk Finding must be tagged with a Risk Context & Impact Domain (RCID) that describes the nature and consequence of the risk.
+
 - **What They Show**:  
   Severity, Likelihood, Inherent Risk, Feasibility to Repair, Expected Residual Risk after fixes.
 
@@ -19,6 +23,10 @@
 
 - **What They Are**:  
   Urgent missing information, documentation gaps, or decisions needed to complete the security review.
+
+- **Record Prefix**: `AI-xxx`
+
+- **RCID Requirement**: RCID is required if the item escalates into a Risk Finding. Optional otherwise.
 
 - **Severity**:  
   - **Critical** — Blocks risk evaluation or report delivery.
@@ -45,9 +53,10 @@
 
 **Discovery Phase:**
 
-- Finding risk directly → Becomes a **Risk Finding**
-- Finding missing information → Becomes a **Critical Action Item**
-  - If resolved → Normal reporting
-  - If unresolved → Escalates into a **Critical Risk Finding**
+- Finding risk directly → Becomes a **Risk Finding** (`R-xxx`)  
+  - Must include RCID categorization
+- Finding missing information → Becomes a **Critical Action Item** (`AI-xxx`)  
+  - If resolved → Normal reporting  
+  - If unresolved → Escalates into a **Critical Risk Finding** with full RCID tagging
 
 ---
