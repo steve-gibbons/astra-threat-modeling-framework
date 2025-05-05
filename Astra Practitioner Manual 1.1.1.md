@@ -125,11 +125,23 @@ Captures:
 (included fully — identical to previous update)
 
 
-### Business Impact Areas (BIAs)
+### Risk Context & Impact Domains (formerly Business Impact Areas)
 
-ASTRA focuses on tangible business consequences rather than internal functions. Below is the current taxonomy of supported Business Impact Areas (BIAs). These are used during assessment to describe the **potential organizational harm** if a risk were to materialize.
+ASTRA focuses on tangible business consequences rather than internal functions.  Every identified risk, architectural issue, or unverified assumption in ASTRA must be assigned a Risk Context & Impact Domain (RCID). RCIDs provide a shared vocabulary for expressing why a record matters — not just what it is — by clarifying the type of exposure and the affected domain.
 
-| **Business Impact Area**          | **Description** |
+6.1 Purpose and Scope
+
+Previously called Business Impact Areas (BIA), this categorization has been renamed to better reflect ASTRA’s broader mission. Not all risks are strictly business-related. Some affect system architecture, safety, legal standing, or public trust. The RCID label emphasizes two critical dimensions:
+	•	Risk Context: The environment, domain, or stakeholder concern involved.
+	•	Impact Domain: The specific area where a failure would manifest consequences.
+
+This framing enables a multidimensional understanding of risk, appropriate for both technical and non-technical stakeholders.
+
+6.2 RCID Categories
+
+Each record must be tagged with exactly one RCID. The currently supported categories are:
+
+| **Risk Context & Impact Domains** | **Description** |
 |:----------------------------------|:----------------|
 | **Customer Safety / Human Harm**  | Risks that could result in physical injury, harm, or adverse health outcomes to users or the public. |
 | **Privacy / PII / PHI**           | Loss, misuse, or unauthorized access to personal data, including health information or privacy breaches. |
@@ -143,12 +155,26 @@ ASTRA focuses on tangible business consequences rather than internal functions. 
 | **Supply Chain / Vendor Impact**  | Risks introduced through third-party software, services, or contractual dependencies. |
 | **Innovation / Product Roadmap**  | Delays or derailment of product strategy, feature development, or technology adoption. |
 | **Strategic or Mission Disruption** | Interference with long-term goals, market competitiveness, or organizational priorities. |
+| **Contextual**                      | (used for assumptions, architectural scope boundaries, or environmental notes that don’t convey direct impact) |
+
+If no RCID clearly applies, use **Unclassified** as a placeholder and mark the record for follow-up.
 
 > **Note:**  
 > *Security* itself is intentionally **not** a Business Impact Area.  
 > Security is a safeguard mechanism — the BIAs represent the actual consequences when those safeguards fail.
 
-| **ASTRA BIA**                      | **ASTRA Description**                                                                                      | **NIST/FIPS 199**         | **ISO 27005**                    | **FAIR**                          | **HITRUST/HIPAA**                  |
+6.3 Role in Evaluation
+
+RCIDs are not severity ratings. They are narrative anchors — used to:
+	•	Help route records to the right stakeholders (legal, compliance, architecture, etc.)
+	•	Aid in prioritization and scoping conversations
+	•	Communicate clearly why something is important even before scoring is complete
+
+RCID assignments form the backbone of the evaluation narrative, supporting clarity, traceability, and stakeholder alignment.
+
+6.4 RCID comparison with other frameworks
+
+| **ASTRA RCID/BIA**                      | **ASTRA Description**                                                                                      | **NIST/FIPS 199**         | **ISO 27005**                    | **FAIR**                          | **HITRUST/HIPAA**                  |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------------|-----------------------------------|------------------------------------|
 | **Customer Safety / Human Harm**  | Risk of physical harm, injury, or adverse health outcomes affecting users, employees, or the public.      | *(Not defined)*            | Personal safety (optional)       | *(Not explicit)*                  | Patient Safety, Device Failure     |
 | **Privacy / PII / PHI**           | Unauthorized access, use, or exposure of personally identifiable or health-related information.            | Confidentiality            | Personal Data Disclosure         | Privacy Violations                | PHI Disclosure                     |
