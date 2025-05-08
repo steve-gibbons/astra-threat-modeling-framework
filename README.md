@@ -1,5 +1,14 @@
 # ASTRA Threat Modeling and Security Architecture Review Framework
 
+![ASTRA Logo](./assets/Astra_Logo.png)
+![Version](https://img.shields.io/badge/version-1.1.1-blue)
+
+<p align="center">
+  <a href="https://github.com/steve-gibbons/astra-threat-modeling-framework">
+    github.com/steve-gibbons/astra-threat-modeling-framework
+  </a>
+</p>
+
 ---
 
 ## About ASTRA
@@ -25,6 +34,16 @@ ASTRA emphasizes:
 - **Collaboration over confrontation** – Findings are meant to improve, not punish  
 - **Action over theory** – Designed to yield tangible, practical outcomes
 
+## Use Cases
+
+ASTRA is suitable for:
+- Internal system or service assessments
+- Vendor or third-party risk evaluations
+- Cloud architecture and migration planning
+- Privacy and compliance readiness
+- M&A and investment due diligence
+- Emerging tech and AI risk reviews
+
 ---
 
 ## What's Included
@@ -37,7 +56,7 @@ This repository provides a complete toolkit for ASTRA-based evaluations, includi
 - `Technical Architecture Questionnaire` – Documents design, boundaries, and dependencies  
 - `Quick Guide to Spreadsheet Usage` – Field reference for common terms and practices  
 - `Sample Filled Tables` – Example risks, observations, and scoring  
-- `Risk Matrix Chart` – Default risk scoring rubric  
+- `Risk Matrix Reference` – Integrated into the Practitioner’s Manual v1.1.1
 - `Client-Facing Guide` – Introductory handout to align expectations and explain process
 
 ---
@@ -55,10 +74,10 @@ This repository provides a complete toolkit for ASTRA-based evaluations, includi
 ## Getting Started
 
 1. Begin with the [ASTRA Practitioner’s Manual](./Astra%20Practitioner%20Manual%201.1.1.md)
-2. Download and copy the templates from `/templates/`
+2. Download and copy the templates from [./templates/](./templates/)
 3. Use the questionnaires to gather business and technical context
-4. Conduct structured interviews using the Meeting Logistics tab
-5. Document risks and other findings in the Unified Working Spreadsheet
+4. Conduct structured interviews 
+5. Document risks and other findings in the [Unified Working Spreadsheet](./templates/Unified_Working_Spreadsheet.xlsx)
 
 No specialized tooling is required beyond a spreadsheet application. ASTRA is intentionally designed to meet teams where they are—technically and culturally.
 
