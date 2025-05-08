@@ -1,5 +1,7 @@
 # ASTRA Threat Modeling and Security Architecture Review Framework
 
+![ASTRA Logo](./assets/Astra_Logo.png)
+
 # ASTRA Practitioner’s Manual (Version 1.1.1)
 
 ---
