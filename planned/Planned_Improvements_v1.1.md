@@ -1,10 +1,10 @@
-# Planned Improvements for ASTRA v1.1
+# Planned Improvements for ASTRA v1.3
 
 ---
 
 ## Overview
 
-Following the release of ASTRA v1.0.0, we are planning an initial enhancement update: **ASTRA v1.1**.
+Following the release of ASTRA v1.2.0, we are planning an initial enhancement update: **ASTRA v1.1**.
 
 This update will focus on improving usability, enhancing presentation for executive audiences, and laying groundwork for future expansions.
 
@@ -12,7 +12,7 @@ The enhancements below are planned to be manageable, high-impact, and community-
 
 ---
 
-## Planned Enhancements for v1.1
+## Planned Enhancements for v1.3
 
 | Enhancement | Purpose | Priority |
 |:--|:--|:--|
@@ -23,7 +23,7 @@ The enhancements below are planned to be manageable, high-impact, and community-
 
 ---
 
-## Scope for ASTRA v1.1 Release
+## Scope for ASTRA v1.3 Release
 
 - **Visual Deliverables**:
   - Risk Matrix Chart (high-quality PNG/SVG)
@@ -51,7 +51,7 @@ The enhancements below are planned to be manageable, high-impact, and community-
 
 ---
 
-## Future Expansion Ideas (Beyond v1.1)
+## Future Expansion Ideas (Beyond v1.3)
 
 - Multiple case studies for different industries (e.g., healthcare, finance, SaaS).
 - Optional deeper scoring model (Likelihood x Impact weightings).
@@ -61,7 +61,7 @@ The enhancements below are planned to be manageable, high-impact, and community-
 
 ---
 
-# End of ASTRA v1.1 Planned Improvements Document
+# End of ASTRA v1.3 Planned Improvements Document
 
 ---
 
