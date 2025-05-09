@@ -430,7 +430,68 @@ ASTRA uses structured record types to organize discoveries made during the evalu
 | `TD-xxx`             | **Administrative To-Do** | Minor clean-up or non-blocking documentation fix. |
 | `FU-xxx`             | **Follow-up Question**   | A clarification request for stakeholders or SMEs. |
 
-> For full definitions, see Section 5: Interview and Discovery Process.
+This structure supports traceability, accountability, and collaboration—without the blame-oriented tone common in audit frameworks.
+
+---
+
+### 7.1 Detailed Comparison: Risk Findings vs. Critical Action Items
+
+#### Risk Findings
+
+- **Definition**:  
+  Documented risks identified through system analysis, interviews, or observation.
+  
+- **Record Prefix**:  
+  `R-xxx`
+  
+- **RCID Requirement**:  
+  Every Risk Finding must be tagged with a **Risk Context & Impact Domain (RCID)** that describes the nature and consequence of the risk.
+
+- **Purpose**:  
+  Prioritize remediation efforts based on business impact and feasibility to repair.
+
+- **Recorded Attributes**:
+  - Severity, Likelihood, Inherent Risk
+  - Feasibility to Remediate (Cost, Timeline, Difficulty)
+  - Expected Residual Risk after mitigation
+
+#### Critical Action Items
+
+- **Definition**:  
+  Urgent missing information, documentation gaps, or decisions needed to complete the security review.
+
+- **Record Prefix**:  
+  `AI-xxx`
+
+- **RCID Requirement**:  
+  Optional for Action Items unless they escalate into a Risk Finding.
+
+- **Severity Types**:
+  - **Critical** — Blocks risk evaluation or report delivery
+  - **Administrative** — Minor clean-up or enhancement (non-blocking)
+
+- **Escalation Behavior**:  
+  If left **unresolved**, Critical Action Items escalate into **Critical Risk Findings** (`R-xxx`) in the final report.
+
+- **Purpose**:  
+  Ensure complete and accurate threat modeling and architecture assessment.
+
+#### Why ASTRA Separates Them
+
+| **Category**            | **Purpose** |
+|-------------------------|------------|
+| **Risk Findings (`R-xxx`)**       | Address real-world vulnerabilities and weaknesses directly. |
+| **Critical Action Items (`AI-xxx`)** | Address missing information needed to complete evaluation accurately. |
+
+#### Visual Flow
+
+**Discovery Phase:**
+
+- **Finding risk directly** → Becomes a **Risk Finding** (`R-xxx`)  
+  - Must include RCID categorization
+- **Finding missing information** → Becomes a **Critical Action Item** (`AI-xxx`)  
+  - If resolved → Normal reporting  
+  - If unresolved → Escalates into a **Critical Risk Finding** with full RCID tagging
 
 ---
 
@@ -444,6 +505,7 @@ This section focuses on how these records relate and evolve during the evaluatio
 - **Administrative To-Dos** are logged for awareness and should not block evaluation closure.
 
 This structure supports traceability, accountability, and collaboration—without the blame-oriented tone common in audit frameworks. It ensures nothing important gets lost in the shuffle.
+
 ---
 
 ## 8. Risk Prioritization and Scoring
