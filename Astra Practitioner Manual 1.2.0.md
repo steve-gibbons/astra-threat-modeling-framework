@@ -293,15 +293,32 @@ This helps maintain traceability and transparency throughout the evaluation.
 
 ### Main Tab Major Groupings
 
-The main spreadsheet used during an ASTRA review includes the following column groups:
+The main spreadsheet used during an ASTRA review includes the following **column groups** and **field names**:
 
-| **Group**     | **Columns** |
-|---------------|-------------|
-| **General**   | Record ID, Summary, and Details |
-| **Risk**      | Risk Context & Impact Domain, Severity, Likelihood, Inherent Risk |
-| **Remediation** | Cost, Timeline, Difficulty, Mitigation Impact |
-| **Resolve**   | Residual Risk, Assigned Owner, Due Date, Status |
+| **Group**       | **Columns** |
+|-----------------|------------|
+| **General**     | Record ID, Source (Person or Document), Source Detail (Page/Section), Summary & Context |
+| **Risk**        | Risk Context & Impact Domain, Severity\| Impact, Likelihood\| Frequency, Inherent Risk |
+| **Remediation** | Treatment, Cost, Timeline, Difficulty, Mitigation Effectiveness, Residual Risk |
+| **Resolve**     | Accountable Owner, Due Date, Status |
 
+#### Column Group Descriptions
+
+- **General**  
+  Captures the **record identifier**, **source of information** (such as a person or document), specific **reference details** (such as page or section), and a **concise summary and context**.  
+  This group supports **traceability** and **contextual understanding** of every record.
+
+- **Risk**  
+  Captures the **risk category** (Risk Context & Impact Domain), estimated **severity and impact**, **likelihood and frequency**, and the **inherent risk** before mitigation.  
+  This group helps prioritize risks based on **impact and likelihood**.
+
+- **Remediation**  
+  Captures the **treatment strategy**, estimated **cost**, **timeline**, **difficulty**, and **mitigation effectiveness**, as well as the resulting **residual risk** after treatment.  
+  This group supports **remediation planning** and helps teams understand the trade-offs involved.
+
+- **Resolve**  
+  Captures the **accountable owner**, **due date**, and current **status** of the record.  
+  This group supports **ownership assignment**, **tracking**, and **follow-up** to ensure issues are addressed.
 ---
 
 ### Record Types
