@@ -1,7 +1,7 @@
 # ASTRA Threat Modeling and Security Architecture Review Framework
 
 ![ASTRA Logo](./assets/Astra_Logo.png)
-![Version](https://img.shields.io/badge/version-1.1.1-blue)
+![Version](https://img.shields.io/badge/version-1.2.0-blue)
 
 <p align="center">
   <a href="https://github.com/steve-gibbons/astra-threat-modeling-framework">
@@ -56,7 +56,7 @@ This repository provides a complete toolkit for ASTRA-based evaluations, includi
 - `Technical Architecture Questionnaire` – Documents design, boundaries, and dependencies  
 - `Quick Guide to Spreadsheet Usage` – Field reference for common terms and practices  
 - `Sample Filled Tables` – Example risks, observations, and scoring  
-- `Risk Matrix Reference` – Integrated into the Practitioner’s Manual v1.1.1
+- `Risk Matrix Reference` – Integrated into the Practitioner’s Manual v1.2.0
 - `Client-Facing Guide` – Introductory handout to align expectations and explain process
 
 ---
@@ -71,15 +71,16 @@ This repository provides a complete toolkit for ASTRA-based evaluations, includi
 
 ---
 
-## Getting Started
+## Quick Start
 
-1. Begin with the [ASTRA Practitioner’s Manual](./Astra%20Practitioner%20Manual%201.1.1.md)
-2. Download and copy the templates from [./templates/](./templates/)
-3. Use the questionnaires to gather business and technical context
-4. Conduct structured interviews 
-5. Document risks and other findings in the [Unified Working Spreadsheet](./templates/Unified_Working_Spreadsheet.xlsx)
+1. Review the [ASTRA Practitioner’s Manual](./Astra%20Practitioner%20Manual%201.2.0.md) for methodology and process guidance.
+2. Download the [Unified Working Spreadsheet](./templates/Unified_Working_Spreadsheet.xlsx) and [questionnaires](./templates/).
+3. Gather business and technical context using the provided templates.
+4. Conduct structured interviews and document findings in the spreadsheet.
+5. Prioritize risks using the built-in scoring model.
+6. Share findings using the reporting structure described in the Practitioner’s Manual.
 
-No specialized tooling is required beyond a spreadsheet application. ASTRA is intentionally designed to meet teams where they are—technically and culturally.
+No specialized tooling is required—ASTRA is designed to work with standard spreadsheet applications and meet teams where they are.
 
 ---
 
