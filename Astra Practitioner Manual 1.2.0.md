@@ -2,7 +2,7 @@
 
 ![ASTRA Logo](./assets/Astra_Logo.png)
 
-# ASTRA Practitioner’s Manual (Version 1.1.1)
+# ASTRA Practitioner’s Manual (Version 1.2.0)
 
 ---
 
@@ -351,6 +351,33 @@ ASTRA allows risks to be tagged with a **Treatment Strategy**—a high-level pla
 
 Use the `Risk Treatment Strategy` column in the ASTRA spreadsheet to tag each risk with one of these options. Additional context can be added in a `Treatment Notes` field if needed.
 
+---
+
+### ⚠️ Methodological Disclaimers on Risk Scoring
+
+#### About Risk Scoring with Ordinal Values
+
+ASTRA uses qualitative or *ordinal* scales such as **Low**, **Medium**, **High**, and **Critical** to estimate risk severity, likelihood, and overall priority.  
+While these scales are widely used across the industry for their simplicity and accessibility, they have **mathematical limitations**:
+
+- **Ordinal scales are rankings, not numerical values**. You cannot assume that "High" is exactly twice as severe as "Medium," nor can you perform mathematically valid operations like multiplying or averaging these values.
+- **Aggregation and Distance Issues**: There is no universally accepted way to determine whether, for example, fixing ten "Low" risks is better or worse than fixing one "High" risk.  
+  This is because ordinal scales **lack proportional or distance-based meaning**.
+- **Rare but High-Impact Events**: Simple ordinal methods may **underrepresent rare, catastrophic risks** (so-called "black swan" events) because they rely on generalized scoring without probability distributions.
+
+#### About Risk Matrices and Multiplicative Scoring
+
+ASTRA’s risk matrix multiplies **Severity × Likelihood** to produce an overall priority score.  
+While this matrix is a useful communication tool, **it should not be interpreted as a mathematically precise calculation**.
+
+- Multiplying ordinal values does not yield true risk magnitude, only a *relative prioritization* for discussion and planning purposes.
+- These scores are best used as **guidance**, not as definitive or absolute measures of risk.
+- Teams should avoid over-relying on these scores for budgetary or legal justifications without further quantitative analysis.
+
+For teams seeking greater rigor, see **Appendix: Advanced Risk Quantification Alternatives**.
+
+---
+
 ## 9. Status Definitions
 
 Each item recorded in the ASTRA spreadsheet—whether it's a risk, assumption, action item, or question—must have a **status** that reflects where it stands in the review process.
@@ -652,7 +679,54 @@ The following templates are included with this release:
 
 ---
 
+# Appendix: Advanced Risk Quantification Alternatives
+
+---
+
+## Overview
+
+For teams seeking **greater mathematical rigor** than qualitative or ordinal scoring methods provide, ASTRA recommends the following **optional advanced techniques**:
+
+### Probability Ranges
+
+- Replace "Low," "Medium," or "High" likelihood with **estimated probability ranges**, such as "5–15% chance per year."
+- This provides a more defensible and transparent basis for evaluating risk likelihood.
+
+### Monte Carlo Simulations and Loss Exceedance Curves
+
+- Use **Monte Carlo simulations** to run thousands of random trials based on defined risk variables.
+- Generate **Loss Exceedance Curves** to visualize the probability of different levels of impact.
+- This approach captures rare but extreme risks and supports sound aggregation across multiple risks.
+
+### FAIR Model (Factor Analysis of Information Risk)
+
+- Use the **FAIR framework** for structured, quantitative risk assessment based on:
+  - Loss Event Frequency
+  - Probable Loss Magnitude
+- Produces financially oriented outputs suitable for executive decision-making.
+
+---
+
+## Recommended References
+
+- *How to Measure Anything in Cybersecurity Risk* by Douglas W. Hubbard and Richard Seiersen
+- *The Metrics Manifesto* by Richard Seiersen
+- FAIR Institute: [https://www.fairinstitute.org](https://www.fairinstitute.org)
+
+---
+
+## Optional Use in ASTRA
+
+These advanced methods are **not required** to perform an ASTRA review.  
+They are **optional enhancements** for teams seeking to:
+
+- Strengthen the defensibility of their risk assessments
+- Capture rare or extreme risk scenarios
+- Align risk outputs with financial or regulatory decision-making
+
+---
+
 For updates, tools, or additional guidance, visit the ASTRA project homepage:  
 [https://github.com/steve-gibbons/astra-threat-modeling-framework](https://github.com/steve-gibbons/astra-threat-modeling-framework)
 
-# End of ASTRA v1.1.1 Practitioner’s Manual
+# End of ASTRA v1.2.0 Practitioner’s Manual
