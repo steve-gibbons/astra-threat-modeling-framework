@@ -91,19 +91,89 @@ ASTRA uses a set of structured tools and views to support the evaluation process
 
 Some are used during the assessment (intermediary), while others support delivery and follow-up (final outputs). All are intended to make risk decisions easier—not harder.
 
-| **Work Product**                   | **Purpose** |
-|-----------------------------------|-------------|
-| **Business Context Questionnaire** | Documents how the system is expected to be used, who it serves, and key business assumptions. |
-| **Technical Architecture Questionnaire** | Captures the system’s design, key components, boundaries, and technologies. |
-| **Emerging Risks Questionnaire**   | Optional supplement to explore new technologies, novel threats, or evolving concerns. |
-| **Unified Working Spreadsheet**    | The central record of all observations, assumptions, risks, action items, follow-ups, and to-dos. |
-| **Risk Findings Table**            | A filtered view of the Unified Spreadsheet that highlights discovered risks. |
-| **Critical Action Items Table**    | A focused view showing urgent, unresolved gaps that may block progress or increase risk. |
-| **Administrative To-Do Log**       | Tracks minor fixes, cleanup tasks, or documentation needs. Not considered blocking issues. |
-| **Final Risk and Recommendations Report** | A standalone or auto-generated summary that prioritizes risks and lists practical recommendations. |
-| **Client-Facing Guide**            | Optional onboarding guide that explains ASTRA’s structure, goals, and expectations in plain language. |
+| **Category**                             | **Work Product**                                | **Purpose** |
+|------------------------------------------|------------------------------------------------|-------------|
+| **Onboarding and Orientation Materials** | **Client-Facing Guide**                         | Optional onboarding guide that explains ASTRA’s structure, goals, and expectations in plain language. |
+| **Discovery and Evaluation Tools**       | **Business Context Questionnaire**              | Documents how the system is expected to be used, who it serves, and key business assumptions. |
+|                                          | **Technical Architecture Questionnaire**       | Captures the system’s design, key components, boundaries, and technologies. |
+|                                          | **Emerging Risks Questionnaire**                | Optional supplement to explore new technologies, novel threats, or evolving concerns. |
+|                                          | **Unified Working Spreadsheet**                 | The central record of all observations, assumptions, risks, action items, follow-ups, and to-dos. |
+| **Reporting and Communication Deliverables** | **Risk Findings Table**                       | A filtered view of the Unified Spreadsheet that highlights discovered risks. |
+|                                          | **Critical Action Items Table**                 | A focused view showing urgent, unresolved gaps that may block progress or increase risk. |
+|                                          | **Administrative To-Do Log**                    | Tracks minor fixes, cleanup tasks, or documentation needs. Not considered blocking issues. |
+|                                          | **Final Risk and Recommendations Report (Optional Template Available)** | A standalone or auto-generated summary that prioritizes risks and lists practical recommendations. See Section 4.1 for formatting guidance. |
 
 These artifacts support transparency, help avoid surprises, and ensure findings can be communicated clearly across teams.
+
+About “Auto-Generated” Reports
+
+ASTRA’s Final Risk and Recommendations Report may be produced manually (e.g., written in Word or Markdown) or generated automatically from the Unified Working Spreadsheet by:
+	•	Filtering the Risk Findings Table to show prioritized risks.
+	•	Filtering the Critical Action Items Table to highlight unresolved blockers.
+	•	Including contextual information from the Business Context and Architecture Questionnaires.
+	•	Copying summaries and recommendations into a document for stakeholder review.
+
+Teams may export these filtered views or use additional tooling to render:
+	•	PDFs
+	•	HTML reports
+	•	Word documents
+	•	Markdown summaries
+
+ASTRA does not prescribe a required report format, but providing a clear, professional report ensures the results are accessible to both technical and non-technical audiences.
+
+---
+
+## 4.1 Report Format Guidance (Optional, but Recommended)
+
+ASTRA does not prescribe a strict format for the final report, but providing a clear, professional document helps ensure results are accessible to both technical and non-technical audiences.
+
+This section offers a recommended structure and formatting suggestions based on best practices.
+
+### Recommended Report Structure
+
+1. **Cover Page**  
+   Include the report title, date, evaluation target, facilitator(s), and organization branding (if applicable).
+
+2. **Table of Contents**  
+   Provide clickable links and page numbers if supported by the chosen format (such as PDF or HTML).
+
+3. **Executive Summary**  
+   Summarize key findings, prioritized risks, and high-level recommendations suitable for leadership review.
+
+4. **Evaluation Scope and Objectives**  
+   Describe what was assessed, the purpose of the evaluation, and any exclusions or limitations.
+
+5. **Business and Technical Context**  
+   Summarize the system’s purpose, architecture, business goals, and constraints.
+
+6. **Key Assumptions and Constraints**  
+   List verified assumptions and any gaps in understanding that were identified during the evaluation.
+
+7. **Risk Findings Summary**  
+   Present a clear list or table of prioritized risks, including severity, likelihood, and RCID mapping.
+
+8. **Critical Action Items**  
+   Highlight unresolved blockers or open questions that require immediate attention.
+
+9. **Administrative To-Do Items (Optional)**  
+   List minor issues that do not block risk assessment or delivery but may require future attention.
+
+10. **Appendices (Optional)**  
+    Include supporting materials such as methodology notes, diagrams, glossary, or detailed findings.
+
+### Suggested Export Formats
+
+- **PDF** with clickable Table of Contents and page numbers for stakeholder readability.
+- **Markdown or Word Document** for internal team collaboration and version control.
+- **HTML** for publishing on internal portals or online sharing.
+
+### Optional Enhancements
+
+- Add organizational branding such as logos or consistent styling.
+- Include a cover letter or executive briefing page summarizing key takeaways.
+- Provide interactive dashboards or summary charts if supported by available tools.
+
+This structure ensures that the final report communicates findings clearly while remaining flexible enough to meet various organizational needs.
 
 ---
 
@@ -130,6 +200,81 @@ The goal is to understand how things actually work, clarify expectations, and su
 - **Collaborative Tone**  
   ASTRA interviews are improvement-focused and never adversarial. The emphasis is on shared understanding and positive change.
 
+### 5.1 Supporting Tables Overview
+
+In addition to recording risks and actions, ASTRA evaluations rely on three supporting tables to **track participation, document references, and stakeholder accountability**. These tables provide traceability, reduce ambiguity, and ensure teams can validate or follow up on sources of information used in the evaluation.
+
+These tables are:
+
+- **5.1.1 Interview Attendees Table** – Who participated in the evaluation sessions.
+- **5.1.2 Referenced Stakeholders Table** – Who owns or is accountable for the system or identified risks.
+- **5.1.3 Referenced Documents Table** – What documents or artifacts were used as inputs to the evaluation.
+
+---
+
+#### 5.1.1 Interview Attendees Table
+
+The **Interview Attendees Table** documents all participants involved in the structured interviews or working sessions.
+
+Each row should capture:
+
+| **Field**          | **Purpose** |
+|--------------------|-------------|
+| **Attendees Code**  | Short identifier used in notes or records (e.g., SPG, JD). |
+| **Name**            | Full name of the participant. |
+| **Role/Department** | Internal or external role (e.g., Architect, Developer, Product Owner). |
+| **Title**           | Job title if known. |
+| **Employer**        | Participant's organization or company. |
+| **Email**           | Contact email, if available. |
+| **Phone**           | Contact phone number, if available. |
+| **Via**             | How the participant attended (e.g., In Person, Zoom, Telephone). |
+
+This table supports **traceability of insights** and clarifies who contributed to the evaluation.
+
+---
+
+#### 5.1.2 Referenced Stakeholders Table
+
+The **Referenced Stakeholders Table** documents **key individuals or roles** responsible for the system, identified risks, or follow-up actions.
+
+Each row should capture:
+
+| **Field**              | **Purpose** |
+|------------------------|-------------|
+| **Person Code**        | Short identifier used in records (e.g., BB, VP). |
+| **Name**               | Full name of the stakeholder. |
+| **Role/Department**    | Their organizational role or department. |
+| **Title**              | Job title, if known. |
+| **Employer**           | Organization or company. |
+| **Email**              | Contact email, if available. |
+| **Phone**              | Contact phone number, if available. |
+| **Via**                | How they were referenced (e.g., Org Chart, Interview, Document). |
+
+This table **supports accountability** by linking risks and recommendations to the appropriate business or technical owners.
+
+---
+
+#### 5.1.3 Referenced Documents Table
+
+The **Referenced Documents Table** tracks all supporting materials reviewed or referenced during the evaluation.
+
+Each row should capture:
+
+| **Field**                     | **Purpose** |
+|-------------------------------|-------------|
+| **Document Code**              | Short identifier (e.g., SAD, DFD). |
+| **Document/Artifact/Resource** | Plain-language description of the artifact. |
+| **Provided Artifact or Link (or N/A)** | Link or reference, or "N/A" if not provided. |
+| **Version Evaluated**          | Document version or date reviewed. |
+| **Also Known As**              | Alternate names, acronyms, or internal references. |
+| **Maturity Level (Optional)**  | Self-assessed readiness (Low, Medium, High). See Diagram Sufficiency Appendix. |
+| **Rarity**                     | Real-world prevalence (Common, Uncommon, Rare). |
+
+This table supports **evaluation transparency** and **traceability** by clearly logging the informational sources used in the assessment.
+
+---
+
+By maintaining these supporting tables, ASTRA ensures that evaluations are **well-documented, defensible, and easy to revisit** for follow-up or future assessments.
 ---
 
 ### Meeting Logistics Tab
@@ -723,6 +868,74 @@ They are **optional enhancements** for teams seeking to:
 - Strengthen the defensibility of their risk assessments
 - Capture rare or extreme risk scenarios
 - Align risk outputs with financial or regulatory decision-making
+
+---
+
+# Appendix: Diagram Sufficiency Criteria
+
+## Overview
+
+ASTRA does not prescribe a single diagramming style or tooling preference.  
+However, **reviewers and readers must be able to understand** how the diagram supports the evaluation's objectives.
+
+This appendix provides **reviewer prompts**, a **statement template**, and **maturity level descriptions** to help teams assess and explain diagram sufficiency.
+
+---
+
+## Reviewer Prompts
+
+Use these questions to assess whether the included diagram(s) are fit-for-purpose:
+
+1. **Purpose Alignment**  
+   - Does the diagram support the evaluation’s stated scope and goals?
+
+2. **Stakeholder Relevance**  
+   - Can both technical and non-technical audiences understand the key elements?
+
+3. **Boundary Clarity**  
+   - Are system boundaries and trust zones clearly shown?
+
+4. **Data Flow Visibility**  
+   - Are key data inputs, outputs, and flows represented?
+
+5. **External Entity Representation**  
+   - Are external systems, users, or partners identified?
+
+6. **Threat Surface Coverage**  
+   - Does the diagram expose interaction points where risk could emerge?
+
+7. **Level of Detail Justification**  
+   - Why was this level of detail chosen? What would be gained or lost by adding more?
+
+8. **Traceability to Risk Records**  
+   - Can risks identified in the evaluation be mapped back to diagram elements?
+
+---
+
+## Example Sufficiency Statement
+
+Consider adding a short statement like the following when presenting a diagram:
+
+> _“This diagram presents the system’s boundary, external entities, and primary data flows at a level sufficient for cross-functional risk prioritization. While lower-level technical details are not shown, this representation supports business, security, and operational alignment for the scoped evaluation.”_
+
+---
+
+## Diagram Maturity Levels
+
+Use the table below to self-assess the level of diagram maturity provided:
+
+| **Level** | **Characteristics** |
+|----------|---------------------|
+| **Low**  | High-level only (e.g., single box labeled "Platform"). Missing data flows, boundaries, or external entities. Adds little value to risk assessment. |
+| **Medium** | Clear boundaries, external entities, and data flows. Sufficient for identifying trust zones, threat surfaces, and risk prioritization. |
+| **High**  | Layered views (e.g., physical, logical), trust zones, detailed system interactions, and data classifications. Supports advanced modeling and simulation. |
+
+> **Note:**  
+> A **Medium** level diagram is generally **sufficient** for most ASTRA evaluations unless otherwise justified.
+
+---
+
+Teams are encouraged to document **why their diagram is sufficient** using these prompts, templates, or levels. This supports reviewer understanding and stakeholder confidence in the evaluation’s scope and coverage.
 
 ---
 
