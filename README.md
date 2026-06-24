@@ -106,7 +106,7 @@ Contributors are expected to align with ASTRA’s philosophy of collaboration, i
 
 ## About This Project
 
-ASTRA is dedicated to my fiancée, Karen, who inspires me to seek the light, to fight the Dark Side, and to believe that clarity, collaboration, and resilience are forces for good — in both life and work.
+ASTRA is dedicated to my mom, Evelyn, who inspires me to seek the light, to fight the Dark Side, and to believe that clarity, collaboration, and resilience are forces for good — in both life and work.
 
 This framework is my contribution back to the security and risk management community that shaped me. It reflects decades of field experience, and the belief that we can build better systems not by adding more friction, but by focusing on what matters.
 
